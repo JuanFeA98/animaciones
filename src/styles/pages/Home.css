@@ -1,0 +1,7 @@
+.Home {
+  width: 100%;
+  height: auto;
+  /* wheight: calc(100vh - 40px); */
+  background: #e8f0e8;
+  position: absolute;
+}

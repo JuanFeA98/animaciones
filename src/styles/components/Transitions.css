@@ -1,0 +1,92 @@
+h2 {
+  width: 300px;
+  margin: 20px auto;
+  color: #0c8300;
+  text-shadow: 1px 1px 2px #54e346;
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #0c8300;
+  text-shadow: 1px 1px 2px #54e346;
+}
+
+.Transitions {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Transitions__Simple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Transitions__Simple--circle {
+  width: 100px;
+  height: 100px;
+  background: yellowgreen;
+  border-radius: 50%;
+  transition: 1s 0.3s;
+}
+
+.Transitions__Simple--circle:hover {
+  width: 200px;
+  height: 200px;
+}
+
+.Transitions__Interaction--container {
+  width: 70%;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.Transitions__Interaction--container:hover .circle__TIA,
+.Transitions__Interaction--container:hover .circle__TIB {
+  width: 75px;
+  height: 75px;
+}
+
+.Transitions__Interaction--circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: 1s 0.3s;
+  position: absolute;
+}
+
+.circle__TIA,
+.circle__TIC {
+  background: red;
+  left: 0;
+}
+
+.circle__TIB,
+.circle__TID {
+  background: cyan;
+  right: 0;
+}
+
+.Transitions__Interaction--container:hover .circle__TIC {
+  left: 69px;
+}
+
+.Transitions__Interaction--container:hover .circle__TID {
+  right: 68px;
+}
+
+@media screen and (min-width: 768px) {
+  .Transitions {
+    flex-direction: row;
+  }
+  .Transitions__Interaction--container {
+    width: 100%;
+  }
+}
